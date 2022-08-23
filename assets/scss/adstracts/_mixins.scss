@@ -1,0 +1,14 @@
+/* 스크롤바숨기기 */
+@mixin noScrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+    }
+}
+
+/* 말줄임소스 */
+@mixin elip{display: block;
+    text-overflow: ellipsis;
+}
