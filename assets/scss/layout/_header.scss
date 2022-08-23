@@ -149,7 +149,9 @@
                 }
         
                 .btn-more{ //메뉴 버튼 전환
-                    transform: rotate(180deg);  
+                    &::after{
+                        transform: rotate(180deg);  
+                    }
                 }
             }
 
@@ -201,7 +203,7 @@
                 background: url(../image/btnmore.png) no-repeat;
                 background-position: center;
                 cursor: pointer;
-
+                &::after{content: '';}
             }
         }
     }
