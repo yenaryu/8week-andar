@@ -12,3 +12,13 @@
 @mixin elip{display: block;
     text-overflow: ellipsis;
 }
+
+/* 미디어쿼리 */
+$mobile: 767px; //모바일사이즈
+
+/*반응형, 브라우저 크기가 767px 이하일때*/
+@mixin mobile{
+  @media (max-width: $mobile){
+    @content;
+  }
+}

@@ -60,7 +60,6 @@ $(function(){
   });  
 
 
-
   
   /* header group-menu 왼쪽메뉴 열고닫기 */
   $('.group-header .btn-menu').click(function(e){ //열기버튼

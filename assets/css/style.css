@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* 전체 import */ /* 스크롤바숨기기 */
 /* 말줄임소스 */
+/* 미디어쿼리 */
+/*반응형, 브라우저 크기가 767px 이하일때*/
 /**
  * Swiper 8.3.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -979,7 +981,7 @@ body {
 .header .header-bottom .bottom-wrap.show .all-menu {
   display: block;
 }
-.header .header-bottom .bottom-wrap.show .btn-more {
+.header .header-bottom .bottom-wrap.show .btn-more::after {
   transform: rotate(180deg);
 }
 .header .header-bottom .bottom-wrap .bottom-list {
@@ -1036,6 +1038,9 @@ body {
   background: url(../image/btnmore.png) no-repeat;
   background-position: center;
   cursor: pointer;
+}
+.header .header-bottom .bottom-wrap .btn-more::after {
+  content: "";
 }
 .header .menu-area {
   display: none;
