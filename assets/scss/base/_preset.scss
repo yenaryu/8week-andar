@@ -3,6 +3,14 @@ body{font-size: 13px;
     font-family: 'Gilroy','NotoSansKR','Malgun Gothic','Dotum',sans-serif;
     color: #333;
     background: #fff;
+    &.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
 }
 
 .wrapper{min-width: 320px;}

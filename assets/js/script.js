@@ -65,13 +65,13 @@ $(function(){
   $('.group-header .btn-menu').click(function(e){ //열기버튼
     e.preventDefault(); 
     $('.group-menu').addClass('active') //active 추가해서 left0
-    $('body').addClass('overflow-h'); //스크롤했을때 배경 안움직이게
+    $('body').addClass('active'); //스크롤했을때 배경색ㅂ
   });
 
   $('.group-menu .close').click(function(e){ //닫기버튼
       e.preventDefault();
       $('.group-menu').removeClass('active') //active삭제
-      $('body').removeClass('overflow-h'); //hidden빼주기
+      $('body').removeClass('active'); //hidden빼주기
 
   });
 
